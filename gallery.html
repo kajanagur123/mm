@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Our Beautiful Family</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">👨‍👩‍👧‍👦</span>
+                <span class="logo-text">Our Family</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="memories.html" class="nav-link">Memories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="surprise.html" class="nav-link">Surprise</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Photo Gallery</h1>
+                <p class="page-subtitle">Capturing beautiful moments of our little angel</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="portraits">Portraits</button>
+                    <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                    <button class="filter-btn" data-filter="traditional">Traditional</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.39 AM (1).jpeg" alt="Cute girl" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Our Little Princess</h3>
+                                <p>Sparkling with joy and innocence</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="traditional">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.37 AM.jpeg" alt="Traditional dress" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Festival Beauty</h3>
+                                <p>Dressed in traditional elegance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.34 AM.jpeg" alt="Outdoor fun" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Adventure Time</h3>
+                                <p>Exploring the world with wonder</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.33 AM (2).jpeg" alt="Happy outdoors" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Pure Joy</h3>
+                                <p>Happiness in every step</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.33 AM (1).jpeg" alt="Beautiful smile" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Radiant Smile</h3>
+                                <p>Lighting up our world</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate images for a fuller gallery -->
+                    <div class="gallery-item" data-category="traditional">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.37 AM.jpeg" alt="Traditional beauty" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Cultural Heritage</h3>
+                                <p>Embracing our traditions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="outdoor">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.34 AM.jpeg" alt="Nature explorer" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Little Explorer</h3>
+                                <p>Discovering nature's wonders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="../public/WhatsApp Image 2025-06-17 at 8.37.39 AM (1).jpeg" alt="Angel face" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Angel Face</h3>
+                                <p>Heaven sent to us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="close-lightbox">&times;</span>
+                <img src="" alt="" class="lightbox-image" id="lightboxImage">
+                <div class="lightbox-nav">
+                    <button class="lightbox-prev" id="lightboxPrev">❮</button>
+                    <button class="lightbox-next" id="lightboxNext">❯</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Our Beautiful Family. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/gallery.js"></script>

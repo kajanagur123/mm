@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise - Our Beautiful Family</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/surprise.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">👨‍👩‍👧‍👦</span>
+                <span class="logo-text">Our Family</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="memories.html" class="nav-link">Memories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="surprise.html" class="nav-link active">Surprise</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="surprise-hero">
+            <div class="container">
+                <div class="surprise-content">
+                    <h1 class="surprise-title">🎁 Special Surprise! 🎁</h1>
+                    <p class="surprise-subtitle">Something magical awaits our little princess</p>
+                    <button class="reveal-btn" id="revealBtn">Click to Reveal Surprise!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="surprise-reveal" id="surpriseReveal">
+            <div class="container">
+                <div class="celebration">
+                    <div class="confetti"></div>
+                    <div class="surprise-message">
+                        <h2>🌟 You Are Our Shining Star! 🌟</h2>
+                        <p>Every day you bring sunshine into our lives with your beautiful smile and loving heart.</p>
+                    </div>
+                </div>
+
+                <div class="interactive-section">
+                    <h3>Fun Activities for Our Little Angel</h3>
+                    
+                    <div class="activity-grid">
+                        <div class="activity-card" id="colorGame">
+                            <div class="activity-icon">🎨</div>
+                            <h4>Color Magic</h4>
+                            <p>Click to change colors!</p>
+                            <div class="color-palette">
+                                <div class="color-dot" data-color="#ff6b9d"></div>
+                                <div class="color-dot" data-color="#4ecdc4"></div>
+                                <div class="color-dot" data-color="#45b7d1"></div>
+                                <div class="color-dot" data-color="#f9ca24"></div>
+                                <div class="color-dot" data-color="#6c5ce7"></div>
+                            </div>
+                        </div>
+
+                        <div class="activity-card" id="musicBox">
+                            <div class="activity-icon">🎵</div>
+                            <h4>Music Box</h4>
+                            <p>Play your favorite tunes!</p>
+                            <div class="music-buttons">
+                                <button class="music-btn" data-sound="happy">Happy Song</button>
+                                <button class="music-btn" data-sound="lullaby">Lullaby</button>
+                                <button class="music-btn" data-sound="dance">Dance Time</button>
+                            </div>
+                        </div>
+
+                        <div class="activity-card" id="starCollector">
+                            <div class="activity-icon">⭐</div>
+                            <h4>Star Collector</h4>
+                            <p>Collect the falling stars!</p>
+                            <div class="game-area">
+                                <div class="score">Stars: <span id="starCount">0</span></div>
+                                <button class="start-game-btn" id="startStarGame">Start Game</button>
+                            </div>
+                        </div>
+
+                        <div class="activity-card" id="photoFrame">
+                            <div class="activity-icon">📸</div>
+                            <h4>Magic Photo Frame</h4>
+                            <p>See yourself in different frames!</p>
+                            <div class="frame-selector">
+                                <button class="frame-btn" data-frame="heart">💖 Heart</button>
+                                <button class="frame-btn" data-frame="star">⭐ Star</button>
+                                <button class="frame-btn" data-frame="flower">🌸 Flower</button>
+                            </div>
+                            <div class="photo-display">
+                                <img src="../public/WhatsApp Image 2025-06-17 at 8.37.39 AM (1).jpeg" alt="Our princess" class="framed-photo" id="framedPhoto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="love-messages">
+                    <h3>Messages of Love</h3>
+                    <div class="message-carousel">
+                        <div class="message-card active">
+                            <p>"You are braver than you believe, stronger than you seem, and smarter than you think."</p>
+                            <span class="message-author">- With Love from Family</span>
+                        </div>
+                        <div class="message-card">
+                            <p>"Your smile is the key that fits the lock of everybody's heart."</p>
+                            <span class="message-author">- With Love from Family</span>
+                        </div>
+                        <div class="message-card">
+                            <p>"You are our sunshine on cloudy days and our rainbow after the storm."</p>
+                            <span class="message-author">- With Love from Family</span>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Our Beautiful Family. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/surprise.js"></script>

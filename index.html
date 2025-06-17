@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Family</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">👨‍👩‍👧‍👦</span>
+                <span class="logo-text">Our Family</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/memories.html" class="nav-link">Memories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/surprise.html" class="nav-link">Surprise</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Welcome to Our Family</h1>
+                    <p class="hero-subtitle">Where love grows and memories are made</p>
+                    <div class="hero-buttons">
+                        <a href="pages/gallery.html" class="btn btn-primary">View Gallery</a>
+                        <a href="pages/memories.html" class="btn btn-secondary">Our Memories</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="public/WhatsApp Image 2025-06-17 at 8.37.39 AM (1).jpeg" alt="Our little princess" class="featured-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="family-intro">
+            <div class="container">
+                <h2 class="section-title">Our Little Star</h2>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <p>Meet our beautiful daughter, the light of our lives and the source of endless joy. Every day with her is a new adventure filled with laughter, wonder, and precious moments that we treasure forever.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Love</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">365</span>
+                                <span class="stat-label">Days of Joy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Smiles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-images">
+                        <div class="image-grid">
+                            <img src="public/WhatsApp Image 2025-06-17 at 8.37.37 AM.jpeg" alt="Beautiful moment" class="grid-image">
+                            <img src="public/WhatsApp Image 2025-06-17 at 8.37.34 AM.jpeg" alt="Happy times" class="grid-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <div class="container">
+                <h2 class="section-title">Family Playlist</h2>
+                <div class="music-player">
+                    <div class="player-controls">
+                        <button class="control-btn" id="prevBtn">⏮️</button>
+                        <button class="control-btn play-pause" id="playPauseBtn">▶️</button>
+                        <button class="control-btn" id="nextBtn">⏭️</button>
+                    </div>
+                    <div class="song-info">
+                        <div class="song-title" id="songTitle">Select a song to play</div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="song-item" data-song="0">
+                        <span class="song-icon">🎵</span>
+                        <span class="song-name">Twinkle Twinkle Little Star</span>
+                    </div>
+                    <div class="song-item" data-song="1">
+                        <span class="song-icon">🎶</span>
+                        <span class="song-name">You Are My Sunshine</span>
+                    </div>
+                    <div class="song-item" data-song="2">
+                        <span class="song-icon">🎵</span>
+                        <span class="song-name">Happy Birthday Song</span>
+                    </div>
+                    <div class="song-item" data-song="3">
+                        <span class="song-icon">🎶</span>
+                        <span class="song-name">Brahms Lullaby</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <h2 class="section-title">Explore Our Family</h2>
+                <div class="links-grid">
+                    <a href="pages/memories.html" class="link-card">
+                        <div class="card-icon">📖</div>
+                        <h3>Memories</h3>
+                        <p>Beautiful moments we've captured together</p>
+                    </a>
+                    <a href="pages/gallery.html" class="link-card">
+                        <div class="card-icon">📸</div>
+                        <h3>Gallery</h3>
+                        <p>Our photo collection of precious times</p>
+                    </a>
+                    <a href="pages/surprise.html" class="link-card">
+                        <div class="card-icon">🎁</div>
+                        <h3>Surprise</h3>
+                        <p>Something special waiting for you</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Our Beautiful Family. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/music.js"></script>
